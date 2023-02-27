@@ -4,6 +4,7 @@ import {FaFacebook, FaInstagram} from 'react-icons/fa'
 import {SiTwitter} from 'react-icons/si'
 import {RxLinkedinLogo} from 'react-icons/rx'
 import {BsInstagram, BsArrowRightCircle} from 'react-icons/bs'
+import { NavLink } from 'react-router-dom'
 
 const Navbar = () => {
   return (
@@ -29,9 +30,10 @@ const Navbar = () => {
                     <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
                         <RxDashboard/>
                     </button>
-                    <a className="navbar-brand" href="index.html">
+                    <NavLink to="" className="navbar-brand">
+                    
                         <img src="assets/img/logo.png" className="logo" alt="Logo" />
-                    </a>
+                    </NavLink>
                 </div>
                  {/* End Header Navigation  */}
 
@@ -39,7 +41,7 @@ const Navbar = () => {
                 <div className="collapse navbar-collapse" id="navbar-menu">
                     <ul className="nav navbar-nav navbar-center" data-in="fadeInDown" data-out="fadeOutUp">
                         <li className="dropdown">
-                            <a href="#">Home</a>
+                            <NavLink to="">Home</NavLink>
                         </li>
                         <li className="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Services</a>
@@ -52,13 +54,13 @@ const Navbar = () => {
                                 <li><a href="index-it-solution.html">WhatsApp Advertising</a></li>
                             </ul>
                         </li>
-                        <li className="dropdown">
-                            <a href="#">About Social Rajneeti</a>
+                        <li>
+                            <NavLink to="/socialrajneeti">About Social Rajneeti</NavLink>
                         </li>
-                        <li className="dropdown">
-                            <a href="#">Portfolio</a>
+                        <li>
+                        <NavLink to="/portfolio">Portfolio</NavLink>
                         </li>
-                        <li><a href="#">Contact</a></li>
+                        <li><NavLink to="/contact">Contact</NavLink></li>
                     </ul>
                 </div>
                  {/* navbar-collapse  */}
