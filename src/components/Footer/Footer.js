@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink, Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
@@ -16,16 +16,16 @@ const Footer = () => {
                             <div class="social">
                                 <ul>
                                     <li class="facebook">
-                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                        <NavLink to="https://www.facebook.com"><i class="fab fa-facebook-f"></i></NavLink>
                                     </li>
                                     <li class="twitter">
-                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                        <NavLink to="https://www.twitter.com"><i class="fab fa-twitter"></i></NavLink>
                                     </li>
                                     <li class="youtube">
-                                        <a href="#"><i class="fab fa-youtube"></i></a>
+                                        <NavLink to="https://www.youtube.com"><i class="fab fa-youtube"></i></NavLink>
                                     </li>
                                     <li class="instagram">
-                                        <a href="#"><i class="fab fa-instagram"></i></a>
+                                        <NavLink to="https://www.instagram.com"><i class="fab fa-instagram"></i></NavLink>
                                     </li>
                                 </ul>
                             </div>
@@ -37,22 +37,22 @@ const Footer = () => {
                             <h4 class="widget-title">Services</h4>
                             <ul>
                                 <li>
-                                    <a href="#">Digital Marketing</a>
+                                    <NavLink to="/digital-marketing">Digital Marketing</NavLink>
                                 </li>
                                 <li>
-                                    <a href="#">Online Advertising</a>
+                                    <NavLink to="/online-advertising">Online Advertising</NavLink>
                                 </li>
                                 <li>
-                                    <a href="#">Social Media Marketing</a>
+                                    <NavLink to="/social-media">Social Media Marketing</NavLink>
                                 </li>
                                 <li>
-                                    <a href="#">Website Design & Development</a>
+                                    <NavLink to="/website-design">Website Design & Development</NavLink>
                                 </li>
                                 <li>
-                                    <a href="#">Online Events Management</a>
+                                    <NavLink to="/online-event">Online Events Management</NavLink>
                                 </li>
                                 <li>
-                                    <a href="#">WhatsApp Advertising</a>
+                                    <NavLink to="/whatsapp-advertise">WhatsApp Advertising</NavLink>
                                 </li>
                             </ul>
                         </div>
@@ -72,10 +72,10 @@ const Footer = () => {
                                     <NavLink to="/faq">FAQ</NavLink>
                                 </li>
                                 <li>
-                                    <NavLink to="#">Policy</NavLink>
+                                    <NavLink to="/">Policy</NavLink>
                                 </li>
                                 <li>
-                                    <a href="#">Terms</a>
+                                    <NavLink to="/">Terms</NavLink>
                                 </li>
                             </ul>
                         </div>
@@ -113,7 +113,7 @@ const Footer = () => {
                         <p>&copy; Copyright 2023. All Rights Reserved</p>
                     </div>
                     <div class="col-lg-4 text-center logo">
-                        <a href="#"><img src="assets/img/logo.png" alt="Logo"/></a>
+                        <Link to="/"><img src="assets/img/logo.png" alt="Logo"/></Link>
                     </div>
                     <div class="col-lg-4 text-right newsletter">
                         <form action="#">

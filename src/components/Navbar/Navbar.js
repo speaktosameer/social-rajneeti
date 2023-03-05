@@ -1,10 +1,10 @@
 import React from 'react'
 import {RxCross2, RxDashboard} from 'react-icons/rx'
-import {FaFacebook, FaInstagram} from 'react-icons/fa'
+import {FaFacebook} from 'react-icons/fa'
 import {SiTwitter} from 'react-icons/si'
 import {RxLinkedinLogo} from 'react-icons/rx'
 import {BsInstagram, BsArrowRightCircle} from 'react-icons/bs'
-import { NavLink } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   return (
@@ -30,10 +30,10 @@ const Navbar = () => {
                     <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
                         <RxDashboard/>
                     </button>
-                    <NavLink to="" className="navbar-brand">
+                    <Link to="/" className="navbar-brand">
                     
                         <img src="assets/img/logo.png" className="logo" alt="Logo" />
-                    </NavLink>
+                    </Link>
                 </div>
                  {/* End Header Navigation  */}
 
@@ -41,26 +41,26 @@ const Navbar = () => {
                 <div className="collapse navbar-collapse" id="navbar-menu">
                     <ul className="nav navbar-nav navbar-center" data-in="fadeInDown" data-out="fadeOutUp">
                         <li className="dropdown">
-                            <NavLink to="/">Home</NavLink>
+                            <Link to="/">Home</Link>
                         </li>
                         <li className="dropdown">
-                            <a href="" class="dropdown-toggle" data-toggle="dropdown" >Services</a>
+                            <Link to="/digital-marketing" class="dropdown-toggle" data-toggle="dropdown" >Services</Link>
                             <ul class="dropdown-menu">
-                                <li><NavLink to="/digital-marketing">Digital Marketing</NavLink></li>
-                                <li><NavLink to="/online-advertising">Online Advertising</NavLink></li>
-                                <li><NavLink to="/online-event">Online Event Managment</NavLink></li>
-                                <li><NavLink to="/social-media">Social Media Marketing</NavLink></li>
-                                <li><NavLink to="/website-design">WebsiteDesign & Developement</NavLink></li>
-                                <li><NavLink to="/whatsapp-advertise">WhatsApp Advertising</NavLink></li>
+                                <li><Link to="/digital-marketing">Digital Marketing</Link></li>
+                                <li><Link to="/online-advertising">Online Advertising</Link></li>
+                                <li><Link to="/online-event">Online Event Managment</Link></li>
+                                <li><Link to="/social-media">Social Media Marketing</Link></li>
+                                <li><Link to="/website-design">WebsiteDesign & Developement</Link></li>
+                                <li><Link to="/whatsapp-advertise">WhatsApp Advertising</Link></li>
                             </ul>
                         </li>
                         <li>
-                            <NavLink to="/socialrajneeti">About Social Rajneeti</NavLink>
+                            <Link to="/socialrajneeti">About Social Rajneeti</Link>
                         </li>
                         <li>
-                        <NavLink to="/portfolio">Portfolio</NavLink>
+                        <Link to="/portfolio">Portfolio</Link>
                         </li>
-                        <li><NavLink to="/contact">Contact</NavLink></li>
+                        <li><Link to="/contact">Contact</Link></li>
                     </ul>
                 </div>
                  {/* navbar-collapse  */}
@@ -68,7 +68,7 @@ const Navbar = () => {
 
              {/* Start Side Menu  */}
             <div className="side">
-                <a href="#" className="close-side"><RxCross2/></a>
+                <Link to="/" className="close-side"><RxCross2/></Link>
                 <div className="widget">
                     <img src="assets/img/logo.png" alt="Logo" />
                     <p>
@@ -113,10 +113,10 @@ const Navbar = () => {
                 </div>
                 <div className="widget social">
                     <ul className="link">
-                        <li><a href="#"><FaFacebook/></a></li>
-                        <li><a href="#"><SiTwitter/></a></li>
-                        <li><a href="#"><RxLinkedinLogo/></a></li>
-                        <li><a href="#"><BsInstagram/></a></li>
+                        <li><Link to="https://www.facebook.com"><FaFacebook/></Link></li>
+                        <li><Link to="https://www.twiiter.com"><SiTwitter/></Link></li>
+                        <li><Link to="https://www.linkedin.in"><RxLinkedinLogo/></Link></li>
+                        <li><Link to="https://www.instagram.com"><BsInstagram/></Link></li>
                     </ul>
                 </div>
             </div>
