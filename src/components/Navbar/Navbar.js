@@ -41,17 +41,17 @@ const Navbar = () => {
                 <div className="collapse navbar-collapse" id="navbar-menu">
                     <ul className="nav navbar-nav navbar-center" data-in="fadeInDown" data-out="fadeOutUp">
                         <li className="dropdown">
-                            <NavLink to="">Home</NavLink>
+                            <NavLink to="/">Home</NavLink>
                         </li>
                         <li className="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Services</a>
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown" >Services</a>
                             <ul class="dropdown-menu">
-                                <li><NavLink to="digital-marketing">Digital Marketing</NavLink></li>
-                                <li><NavLink to="online-advertising">Online Advertising</NavLink></li>
-                                <li><NavLink to="online-event">Online Event Managment</NavLink></li>
-                                <li><NavLink to="social-media">Social Media Marketing</NavLink></li>
-                                <li><NavLink to="website-design">WebsiteDesign & Developement</NavLink></li>
-                                <li><NavLink to="whatsapp-advertise">WhatsApp Advertising</NavLink></li>
+                                <li><NavLink to="/digital-marketing">Digital Marketing</NavLink></li>
+                                <li><NavLink to="/online-advertising">Online Advertising</NavLink></li>
+                                <li><NavLink to="/online-event">Online Event Managment</NavLink></li>
+                                <li><NavLink to="/social-media">Social Media Marketing</NavLink></li>
+                                <li><NavLink to="/website-design">WebsiteDesign & Developement</NavLink></li>
+                                <li><NavLink to="/whatsapp-advertise">WhatsApp Advertising</NavLink></li>
                             </ul>
                         </li>
                         <li>
