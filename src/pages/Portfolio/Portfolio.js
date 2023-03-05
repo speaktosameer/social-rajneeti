@@ -1,16 +1,16 @@
 import React from 'react'
 import Footer from '../../components/Footer/Footer'
 import Navbar from '../../components/Navbar/Navbar'
-import ContactDetail from '../../components/Contact/Contact'
+import PortfolioDetail from '../../components/Portfolio/Portfolio'
 
-const Contact = () => {
+const Portfolio = () => {
   return (
     <>
     <Navbar/>
-    <ContactDetail/>
+    <PortfolioDetail/>
     <Footer/>
     </>
   )
 }
 
-export default Contact
+export default Portfolio

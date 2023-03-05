@@ -4,6 +4,7 @@ import Home from "./pages/Home/Home";
 import {BrowserRouter, Routes, Route } from "react-router-dom";
 import WhyUs from "./pages/WhyUs/WhyUs";
 import Faq from "./pages/FAQ/Faq";
+import Portfolio from "./pages/Portfolio/Portfolio";
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
             <Route path="about" element={<About/>}/>
             <Route path="socialrajneeti" element={<WhyUs/>}/>
             <Route path="faq" element={<Faq/>}/>
+            <Route path="portfolio" element={<Portfolio/>}/>
           </Routes>
       </BrowserRouter>
     </>
