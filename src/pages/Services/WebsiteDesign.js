@@ -1,10 +1,10 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import Navbar from '../../components/Navbar/Navbar'
 import Footer from '../../components/Footer/Footer'
 
 const WebsiteDesign = () => {
   return (
-    <>
+    <Fragment>
     <Navbar/>
     <div class="project-details-area default-padding">
         <div class="container">
@@ -44,7 +44,7 @@ const WebsiteDesign = () => {
         </div>
     </div>
     <Footer/>
-    </>
+    </Fragment>
   )
 }
 

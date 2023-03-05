@@ -1,10 +1,10 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import Footer from '../../components/Footer/Footer'
 import Navbar from '../../components/Navbar/Navbar'
 
 const SocialMedia = () => {
   return (
-    <>
+    <Fragment>
     <Navbar/>
     <div class="project-details-area default-padding">
         <div class="container">
@@ -34,7 +34,7 @@ const SocialMedia = () => {
         </div>
     </div>
     <Footer/>
-    </>
+    </Fragment>
   )
 }
 

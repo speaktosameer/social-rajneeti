@@ -1,3 +1,4 @@
+import { Fragment } from 'react';
 import About from '../../components/About/About';
 import Contact from '../../components/Contact/Contact';
 import Footer from '../../components/Footer/Footer';
@@ -9,7 +10,7 @@ import Services from '../../components/Serve/Services';
 
 function Home() {
   return (
-    <>
+    <Fragment>
       <Navbar/>
       <HeroSection/>
       <Services/>
@@ -17,7 +18,7 @@ function Home() {
       <Portfolio/>
       <Contact/>
       <Footer/>
-    </>
+    </Fragment>
   );
 }
 
