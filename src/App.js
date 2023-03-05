@@ -5,6 +5,12 @@ import {BrowserRouter, Routes, Route } from "react-router-dom";
 import WhyUs from "./pages/WhyUs/WhyUs";
 import Faq from "./pages/FAQ/Faq";
 import Portfolio from "./pages/Portfolio/Portfolio";
+import DigitalMarket from "./pages/Services/DigitalMarket";
+import OnlineAdvertise from "./pages/Services/OnlineAdvertise";
+import OnlineEvent from "./pages/Services/OnlineEvent";
+import SocialMedia from "./pages/Services/SocialMedia";
+import WebsiteDesign from "./pages/Services/WebsiteDesign";
+import WhatsAppAdver from "./pages/Services/WhatsAppAdver";
 
 
 function App() {
@@ -18,6 +24,13 @@ function App() {
             <Route path="socialrajneeti" element={<WhyUs/>}/>
             <Route path="faq" element={<Faq/>}/>
             <Route path="portfolio" element={<Portfolio/>}/>
+            <Route path="digital-marketing" element={<DigitalMarket/>}/>
+            <Route path="online-advertising" element={<OnlineAdvertise/>}/>
+            <Route path="online-event" element={<OnlineEvent/>}/>
+            <Route path="social-media" element={<SocialMedia/>}/>
+            <Route path="website-design"element={<WebsiteDesign/>}/>
+            <Route path="whatsapp-advertise" element={<WhatsAppAdver/>}/>
+
           </Routes>
       </BrowserRouter>
     </>

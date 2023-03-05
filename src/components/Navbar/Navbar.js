@@ -46,12 +46,12 @@ const Navbar = () => {
                         <li className="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Services</a>
                             <ul class="dropdown-menu">
-                                <li><a href="index-business.html">Digital Marketing</a></li>
-                                <li><a href="index.html">Online Advertising</a></li>
-                                <li><a href="index-marketing-agency.html">Online Event Managment</a></li>
-                                <li><a href="app-landing.html">Social Media Marketing</a></li>
-                                <li><a href="index-digital-agency.html">WebsiteDesign & Developement</a></li>
-                                <li><a href="index-it-solution.html">WhatsApp Advertising</a></li>
+                                <li><NavLink to="digital-marketing">Digital Marketing</NavLink></li>
+                                <li><NavLink to="online-advertising">Online Advertising</NavLink></li>
+                                <li><NavLink to="online-event">Online Event Managment</NavLink></li>
+                                <li><NavLink to="social-media">Social Media Marketing</NavLink></li>
+                                <li><NavLink to="website-design">WebsiteDesign & Developement</NavLink></li>
+                                <li><NavLink to="whatsapp-advertise">WhatsApp Advertising</NavLink></li>
                             </ul>
                         </li>
                         <li>
