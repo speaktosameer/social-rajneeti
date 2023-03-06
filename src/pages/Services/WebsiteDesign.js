@@ -1,11 +1,8 @@
 import React, { Fragment } from 'react'
-import Navbar from '../../components/Navbar/Navbar'
-import Footer from '../../components/Footer/Footer'
 
 const WebsiteDesign = () => {
   return (
     <Fragment>
-    <Navbar/>
     <div class="project-details-area default-padding">
         <div class="container">
             <div class="project-details-items">
@@ -43,7 +40,6 @@ const WebsiteDesign = () => {
             </div>
         </div>
     </div>
-    <Footer/>
     </Fragment>
   )
 }

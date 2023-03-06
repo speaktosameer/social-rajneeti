@@ -13,11 +13,14 @@ import OnlineEvent from "./pages/Services/OnlineEvent";
 import SocialMedia from "./pages/Services/SocialMedia";
 import WebsiteDesign from "./pages/Services/WebsiteDesign";
 import WhatsAppAdver from "./pages/Services/WhatsAppAdver";
+import Navbar from "./components/Navbar/Navbar";
+import Footer from "./components/Footer/Footer";
 
 
 function App() {
   return (
       <Router>
+            <Navbar/>
         <Routes>
             <Route path="/" element={<Home/>} />
             <Route path="/contact" element={<Contact/>} />
@@ -32,6 +35,7 @@ function App() {
             <Route path="/website-design"element={<WebsiteDesign/>} />
             <Route path="/whatsapp-advertise" element={<WhatsAppAdver/>} />
         </Routes>
+            <Footer/>
       </Router>
   );
 }

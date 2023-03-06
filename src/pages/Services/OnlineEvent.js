@@ -1,11 +1,7 @@
 import React, { Fragment } from 'react'
-import Footer from '../../components/Footer/Footer'
-import Navbar from '../../components/Navbar/Navbar'
-
 const OnlineEvent = () => {
   return (
     <Fragment>
-    <Navbar/>
     <div class="project-details-area default-padding">
         <div class="container">
             <div class="project-details-items">
@@ -35,7 +31,6 @@ const OnlineEvent = () => {
             </div>
         </div>
     </div>
-    <Footer/>
     </Fragment>
   )
 }

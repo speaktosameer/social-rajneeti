@@ -1,11 +1,8 @@
 import React, { Fragment } from 'react'
-import Footer from '../../components/Footer/Footer'
-import Navbar from '../../components/Navbar/Navbar'
 
 const OnlineAdvertise = () => {
   return (
     <Fragment>
-    <Navbar/>
     <div class="project-details-area default-padding">
         <div class="container">
             <div class="project-details-items">
@@ -49,7 +46,6 @@ const OnlineAdvertise = () => {
             </div>
         </div>
     </div>
-    <Footer/>
     </Fragment>
   )
 }
