@@ -30,7 +30,7 @@ const Contact = () => {
                                     Please fill the form we will get back to you quickly
                                 </p>
                             </div>
-                            <form action="#">
+                            <form action="https://formspree.io/f/mdovzvjp" method='POST'>
                                 <div className="row">
                                     <div className="col-lg-12">
                                         <div className="form-group">
@@ -39,17 +39,12 @@ const Contact = () => {
                                     </div>
                                     <div className="col-lg-12">
                                         <div className="form-group">
-                                            <input className="form-control" id="ap-email" name="email" placeholder="Email" type="text"/>
+                                            <input className="form-control" id="ap-email" name="email" placeholder="Email" type="email"/>
                                         </div>
                                     </div>
                                     <div className="col-lg-12">
                                         <div className="form-group">
-                                            <select>
-                                                <option value="1">Select Department to email</option>
-                                                <option value="2">Your inquiry about</option>
-                                                <option value="3">General Information Request</option>
-                                                <option value="4">Partner Relations</option>
-                                            </select>
+                                            <input className="form-control" id="ap-phone" name="phone" placeholder="Phone Number" type="number"/>
                                         </div>
                                     </div>
                                     <div className="col-lg-12">
@@ -61,8 +56,6 @@ const Contact = () => {
                             </form>
                         </div>
                     </div>
-                    
-
                 </div>
             </div>
         </div>
